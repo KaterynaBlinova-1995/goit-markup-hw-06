@@ -919,8 +919,31 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .container.lastinfo {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
+  }
+
+  .lastinfo-container {
+    margin-right: 120px;
+  }
+
+  .subscribe-container {
+    margin-left: auto;
+    display: block;
+  }
+  .input-subscription {
+    opacity: 1;
+  }
+
+  .subcribe-svg {
+    position: absolute;
+    margin-left: 16px;
+    top: 10px;
+    right: 24px;
+    fill: #fff;
+  }
+  .button-subscribe {
+    padding-left: 24px;
+    padding-right: 64px;
   }
 }
 
