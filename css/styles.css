@@ -748,3 +748,54 @@ button {
     height: 120px;
   }
 }
+.lastinfo {
+  background-color: #2e2f42;
+  /* padding: 96px 16px; */
+}
+.container.lastinfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  padding: 96px 16px;
+}
+.lastinfo-container {
+  flex-direction: column;
+}
+.lastinfo-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  margin-bottom: 16px;
+  display: block;
+  text-align: center;
+}
+.lastinfo-logo-web {
+  color: #f4f4fd;
+}
+.lastinfo-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  width: 288px;
+}
+.media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
