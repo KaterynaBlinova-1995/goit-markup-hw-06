@@ -750,7 +750,6 @@ button {
 }
 .lastinfo {
   background-color: #2e2f42;
-  /* padding: 96px 16px; */
 }
 .container.lastinfo {
   display: flex;
@@ -759,6 +758,7 @@ button {
   padding: 96px 16px;
 }
 .lastinfo-container {
+  display: flex;
   flex-direction: column;
 }
 .lastinfo-logo {
@@ -771,7 +771,7 @@ button {
   color: #4d5ae5;
   text-decoration: none;
   margin-bottom: 16px;
-  display: block;
+  display: inline-block;
   text-align: center;
 }
 .lastinfo-logo-web {
@@ -789,6 +789,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
 .social {
@@ -798,4 +799,123 @@ button {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+}
+.last-social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 auto;
+  width: 208px;
+  padding: 0;
+}
+.last-social-item {
+  width: 40px;
+  height: 40px;
+}
+.last-social-link {
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.last-social-link:hover,
+.last-social-link:focus {
+  background-color: #31d0aa;
+}
+.last-social-svg {
+  fill: #f4f4fd;
+}
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscription {
+  margin-bottom: 16px;
+}
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.input-subscription {
+  width: 288px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  opacity: 0.3;
+}
+.input-subscription::placeholder {
+  color: #ffffff;
+}
+.button-subscribe {
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subcribe-svg {
+  position: absolute;
+  top: 10px;
+  right: 24px;
+  fill: #fff;
+}
+.button-subscribe:hover,
+.button-subscribe:focus {
+  background-color: #404bbf;
+}
+@media screen and (min-width: 768px) {
+  .container.lastinfo {
+    align-items: baseline;
+    gap: 72px 24px;
+    padding-left: 108px;
+  }
+  .lastinfo-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .lastinfo-description {
+    width: 264px;
+  }
+  .media-container {
+    align-items: flex-start;
+    margin: 0;
+  }
+  .subscribe-container {
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .subscription-form {
+    flex-direction: row;
+  }
+  .input-subscription {
+    width: 264px;
+  }
 }
