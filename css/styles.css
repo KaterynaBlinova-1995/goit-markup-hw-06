@@ -1084,6 +1084,9 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .accept-span {
   width: 16px;
@@ -1097,6 +1100,7 @@ button {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  flex-shrink: 0;
 }
 .policy-link {
   color: #4d5ae5;
