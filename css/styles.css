@@ -359,7 +359,6 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 320px;
   margin: 0 auto;
 }
 @media (min-resolution: 192dpi) {
@@ -407,7 +406,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .solutions {
-    max-width: 768px;
     padding: 112px 0;
     background-image: linear-gradient(
         to bottom,
@@ -746,9 +744,10 @@ button {
     height: 120px;
   }
 }
-.lastinfo {
+.footer {
   background-color: #2e2f42;
-  padding: 96px 16px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .container.lastinfo {
   display: flex;
@@ -932,7 +931,6 @@ button {
   .input-subscription {
     opacity: 1;
   }
-
   .subcribe-svg {
     position: absolute;
     margin-left: 16px;
